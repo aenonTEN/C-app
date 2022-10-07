@@ -1,0 +1,38 @@
+.main {
+    position: relative;
+    background-color: rgb(254, 255, 237);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+    .main__body {
+        z-index: 100;
+        width:70vw;
+        height: 95vh;
+        background-color:#ffffff;
+        box-shadow: 0px 0px 10px 0px rgba($color: black, $alpha: .42);
+
+    }
+
+    header {
+        background-color:rgb(254, 254, 254);
+        position: absolute;
+        min-height: 125px;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1439px){
+    .main {
+        place-items: normal;
+
+        .main__body {
+            width: 100%;
+            height:100%;
+        }
+    }
+    
+}
